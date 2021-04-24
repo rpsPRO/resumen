@@ -1,0 +1,38 @@
+body {
+    background-color: lightblue;
+}
+
+h1,h2,h3 {
+    color: white;
+}
+
+p {
+    font-family: verdana;
+    font-size: 15px;
+}
+
+li {
+    font-family: sans-serif;
+    font-size: 13px;
+}
+
+
+/* las clases van con .  class="panel" */
+.panel {
+    
+    margin: 5px;
+    padding: 5px;
+}
+
+table{
+    background-color: red;
+}
+
+th{
+    background-color: yellow;
+}
+tr{
+    background-color: grey;
+}
+
+

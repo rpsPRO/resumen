@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>Resumen UD5</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" 
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" 
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css" >
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+    <a class="navbar-brand" href="#">UD 5</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a id= "menu_introducccion" class="nav-link" href="#">Introducción </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownHtml5" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 1. Introducción a la orientación a objetos
+              </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownHtml5">
+                  <a id="menu_intro1" class="dropdown-item" href="#">1.1. Introducción </a>
+                  <a id="menu_enfoque_estructurado" class="dropdown-item" href="#">1.2. Enfoque estructurado</a>
+                  <a id="menu_enfoque_orientado" class="dropdown-item" href="#">1.3. Enfoque orientado a objetos</a>               
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownHtml5" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    2. Conceptos de orientación a objetos
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownHtml5">
+                    <a id="menu_intro2" class="dropdown-item" href="#">2.1. Introducción </a>
+                    <a id="menu_ventajas" class="dropdown-item" href="#">2.2. Ventajas de la orientación a objetos</a>
+                    <a id="menu_clases" class="dropdown-item" href="#">2.3. Clases, atributos y métodos</a>
+                    <a id="menu_visibilidad" class="dropdown-item" href="#">2.4. Visibilidad</a>
+                    <a id="menu_objetos" class="dropdown-item" href="#">2.5. Objetos. Instanciación</a>                
+                </div>
+            </li>      
+            <li class="nav-item">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownHtml5" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  3. UML
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownHtml5">
+                  <a id="menu_util" class="dropdown-item" href="#">3.1. ¿Por qué es útil modelar?</a>
+                  <a id="menu_tiposuml" class="dropdown-item" href="#">3.2. Tipos de diagramas UML</a>
+                  <a id="menu_herramientas" class="dropdown-item" href="#">3.3. Herramientas para la elaboración de diagramas UML</a>
+                  <a id="menu_diagramasclases" class="dropdown-item" href="#">3.4. Diagramas de clases</a>
+                  <a id="menu_relacionesclases" class="dropdown-item" href="#">3.5. Relaciones entre clases</a>
+                  <a id="menu_requisitos" class="dropdown-item" href="#">3.6. Paso de los requisitos de un sistema al diagrama de clases</a>
+                  <a id="menu_generacioncodigo" class="dropdown-item" href="#">3.7. Generación de código a partir del diagrama de clases</a>
+                  <a id="menu_documentacion" class="dropdown-item" href="#">3.8. Generación de documentación</a>                
+              </div>
+            </li>
+            <li class="nav-item">
+              <a id="menu_inginversa" class="nav-link" href="#">4. Ingeniería inversa </a>
+            </li>      
+            <li class="nav-item">
+              <a id="menu_conclusion" class="nav-link" href="#">Conclusión </a>
+            </li>
+            <li class="nav-item">
+              <a id="menu_bibliografia" class="nav-link" href="#">Bibliografía </a>
+            </li>
+        </ul>
+    </div>
+  </nav>
+
+
+  <div id="caja_introducccion" class="panel">
+    <h1>Diseño orientado a objetos. Elaboración de diagramas estructurales.</h1>
+    <h2>Introducción</h2>
+    <p>Es esta página web se mostrará de forma resumida los enfoques a la hora de resolver un problema,
+       los conceptos en la programación orientada a objetos y los diagramas UML y su utilidad. También se hablará brevemente de la ingeniería inversa.
+    </p>
+    <p>Rubén Plazas Sánchez.
+      IES Virgen del Carmen.
+      Curso 2020-21.</p>
+  </div>
+
+  <div id="caja_intro1" class="panel">
+    <h2>1.1. Introducción a la orientación a objetos</h2>
+    
+    <p>Para obtener un producto final de calidad, es necesario realizar un proceso previo de análisis y 
+      especificación de las fases que vamos a seguir, y de los resultados que pretendemos conseguir.</p>
+  </div>
+
+  <div id="caja_enfoque_estructurado" class="panel">
+    <h2>1.2. Enfoque estructurado</h2>
+    
+    <p>Se centra en los procedimientos a la hora de resolver un problema, mediante funciones que actúan sobre estructuras de datos. Por ejemplo,
+       dividir un problema en subproblemas más simples reiteradas veces hasta que se llegaba a problemas elementales que se podían resolver utilizando una función.</p>
+  </div>
+
+  <div id="caja_enfoque_orientado" class="panel">
+    <h2>1.3. Enfoque orientado a objetos</h2>
+    
+    <p>Se centra en simular los elementos de la realidad asociados al problema de la manera más cercana posible. La abstracción que permite representar estos elementos se denominan objetos y 
+      están formados por un conjunto de atributos, que son los datos que le caracterizan y un conjunto de operaciones que definen su comportamiento. Cuando se indica a un objeto que ejecute 
+      una operación determinada se dice que se le pasa un mensaje.
+      <br>
+      Cuando se ejecuta un programa orientado a objetos ocurren tres sucesos:  
+      <ul>
+        <li>Primero, los objetos se crean a medida que se necesitan</li>
+        <li>Segundo. Los mensajes se mueven de un objeto a otro (o del usuario a un objeto) a medida que el programa procesa información o responde a la entrada del usuario.</li>
+        <li>Tercero, cuando los objetos ya no se necesitan, se borran y se libera la memoria.</li>
+      </ul>
+    </p>
+  </div>
+
+  <div id="caja_intro2" class="panel">
+    <h2>2.1. Conceptos de orientación a objetos</h2>
+    
+    <p>La orientación a objetos basa su desarrollo en los siguientes conceptos:
+      <br>
+      <ul>
+        <li>Abstracción: Permite capturar las características y comportamientos similares de un conjunto de objetos con el objetivo de darles una descripción formal.</li>
+        <li>Encapsulación: Significa reunir todos los elementos que pueden considerarse pertenecientes a una misma entidad, al mismo nivel de abstracción.</li>
+        <li>Modularidad: Propiedad que permite subdividir una aplicación en partes más pequeñas (llamadas módulos), cada una de las cuales debe ser tan independiente como sea posible de la aplicación en sí y de las restantes partes. En orientación a objetos es algo consustancial, ya que los objetos se pueden considerar los módulos más básicos del sistema.</li>
+        <li>Principio de ocultación: Aísla las propiedades de un objeto contra su modificación por quien no tenga derecho a acceder a ellas.</li>
+        <li>Polimorfismo: Consiste en reunir bajo el mismo nombre comportamientos diferentes. La selección de uno u otro depende del objeto que lo ejecute.</li>
+        <li>Herencia: Relación que se establece entre objetos en los que unos utilizan las propiedades y comportamientos de otros formando una jerarquía. Los objetos heredan las propiedades y el comportamiento de todas las clases a las que pertenecen.</li>
+        <li>Recolección de basura: Técnica por la cual el entorno de objetos se encarga de destruir automáticamente los objetos, y por tanto desvincular su memoria asociada, que hayan quedado sin ninguna referencia a ellos.</li>
+      </ul>
+    </p>
+  </div>
+
+  <div id="caja_ventajas" class="panel">
+    <h2>2.2. Ventajas de la orientación a objetos</h2>
+    
+    <p>
+      <ol type="1">
+        <li>Permite desarrollar software en mucho menos tiempo, con menos coste y de mayor calidad gracias a la reutilización porque al ser completamente modular facilita la creación de código reusable dando la posibilidad de reutilizar parte del código para el desarrollo de una aplicación similar.</li>
+        <li>Se consigue aumentar la calidad de los sistemas, haciéndolos más extensibles ya que es muy sencillo aumentar o modificar la funcionalidad de la aplicación modificando las operaciones.</li>
+        <li>El software orientado a objetos es más fácil de modificar y mantener porque se basa en criterios de modularidad y encapsulación en el que el sistema se descompone en objetos con unas responsabilidades claramente especificadas e independientes del resto.</li>
+        <li>La tecnología de objetos facilita la adaptación al entorno y el cambio haciendo aplicaciones escalables (propiedad deseable de un sistema, red o proceso que le permite hacerse más grande sin rehacer su diseño y sin disminuir su rendimiento). Es sencillo modificar la estructura y el comportamiento de los objetos sin tener que cambiar la aplicación.</li>
+      </ol>
+    </p>
+  </div>
+
+  <div id="caja_clases" class="panel">
+    <h2>2.3. Clases, atributos y métodos</h2>
+    
+    <p>
+      Los objetos de un sistema se abstraen, en función de sus características comunes, en clases. Una clase está formada por un conjunto de procedimientos y datos que resumen características similares de un conjunto de objetos. La clase tiene dos propósitos: definir abstracciones y favorecer la modularidad.
+      <br>
+      Una clase se describe por un conjunto de elementos que se denominan miembros y que son:
+      <ul>
+        <li>Nombre.</li>
+        <li>Atributos: conjunto de características asociadas a una clase. Se definen por su nombre y su tipo, que puede ser simple o compuesto como otra clase.</li>
+        <li>Protocolo: Operaciones (métodos, mensajes) que manipulan el estado. Un método es el procedimiento o función que se invoca para actuar sobre un objeto. Un mensaje es el resultado de cierta acción efectuada por un objeto. El conjunto de mensajes a los cuales puede responder un objeto se le conoce como protocolo del objeto.</li>
+      </ul>
+    </p>
+  </div>
+
+  <div id="caja_visibilidad" class="panel">
+    <h2>2.4. Visibilidad</h2>
+    
+    <p>
+      El principio de ocultación es una propiedad de la orientación a objetos que consiste en aislar el estado de manera que sólo se puede cambiar mediante las operaciones definidas en una clase. Este aislamiento protege a los datos de que sean modificados por alguien que no tenga derecho a acceder a ellos, eliminando efectos secundarios e interacciones. Da lugar a que las clases se dividan en dos partes:
+      <br>
+      <ol type="1">
+        <li>Interfaz: captura la visión externa de una clase, abarcando la abstracción del comportamiento común a los ejemplos de esa clase.</li>
+        <li>Implementación: comprende cómo se representa la abstracción, así como los mecanismos que conducen al comportamiento deseado.</li>
+      </ol>
+      Existen distintos niveles de ocultación que se implementan en lo que se denomina visibilidad. Es una característica que define el tipo de acceso que se permite a atributos y métodos y que podemos establecer como:
+      <br>
+      <ul>
+        <li>Público: Se pueden acceder desde cualquier clase y cualquier parte del programa.</li>
+        <li>Privado: Sólo se pueden acceder desde operaciones de la clase.</li>
+        <li>Protegido: Sólo se pueden acceder desde operaciones de la clase o de clases derivadas (cuando se utiliza la herencia es la clase que hereda los atributos y métodos de la clase base) en cualquier nivel.</li>
+      </ul>
+      Como norma general a la hora de definir la visibilidad tendremos en cuenta que:
+      <br>
+      <ul>
+        <li>El estado debe ser privado. Los atributos de una clase se deben modificar mediante métodos de la clase creados a tal efecto.</li>
+        <li>Las operaciones que definen la funcionalidad de la clase deben ser públicas.</li>
+        <li>Las operaciones que ayudan a implementar parte de la funcionalidad deben ser privadas (si no se utilizan desde clases derivadas) o protegidas (si se utilizan desde clases derivadas).</li>
+      </ul>
+    </p>
+  </div>
+
+  <div id="caja_objetos" class="panel">
+    <h2>2.5. Objetos. Instanciación</h2>
+    
+    <p>
+      Cada vez que se construye un objeto en un programa informático a partir de una clase se crea lo que se conoce como instancia (objeto de una clase, creado en tiempo de ejecución con un estado concreto) de esa clase.
+      <br>
+      Un objeto se define por:
+      <br>
+      <ul>
+        <li>Su estado: es la concreción de los atributos definidos en la clase a un valor concreto.</li>
+        <li>Su comportamiento: definido por los métodos públicos de su clase.</li>
+        <li>Su tiempo de vida: intervalo de tiempo a lo largo del programa en el que el objeto existe. Comienza con su creación a través del mecanismo de instanciación y finaliza cuando el objeto se destruye.</li>
+      </ul>
+      Ejemplos de objetos: objetos físicos (casas, parques, …), elementos de interfaces graficas de usuario (ventanas, menús, cuadros de dialogo, …), animales (animales vertebrados, animales invertebrados), etc.
+      <br>
+      Existe un caso particular de clase, llamada clase abstracta, que, por sus características, no puede ser instanciada. Se suelen usar para definir métodos genéricos relacionados con el sistema que no serán traducidos a objetos concretos, o para definir métodos de base para clases derivadas.
+    </p>
+  </div>
+
+  <div id="caja_util" class="panel">
+    <h2>3.1. ¿Por qué es útil modelar?</h2>
+    <p>
+      <ul>
+        <li>Permite utilizar un lenguaje común que facilita la comunicación entre el equipo de desarrollo.</li>
+        <li>Con UML podemos documentar todos los artefactos de un proceso de desarrollo (requisitos, arquitectura, pruebas, versiones,...) por lo que se dispone de documentación que trasciende al proyecto.</li>
+        <li>Utilizando estas tecnologías podemos incluso indicar qué módulos de software vamos a desarrollar y sus relaciones, o en qué nodos hardware se ejecutarán cuando trabajamos con sistemas distribuidos.</li>
+        <li>Permite especificar todas las decisiones de análisis, diseño e implementación, construyéndose modelos precisos, no ambiguos y completos.</li>
+      </ul>
+      Además, UML puede conectarse a lenguajes de programación mediante ingeniería directa (transformación de un modelo en código a través de su traducción a un determinado lenguaje de programación) e inversa (transformación del código en un modelo a través de su traducción desde un determinado lenguaje de programación).
+    </p>
+  </div>
+
+  <div id="caja_tiposuml" class="panel">
+    <h2>3.2. Tipos de diagramas UML</h2>
+    <p>
+      <img src="img/Tipos de diagramas UML.PNG" alt="Tipos de diagramas UML">
+    </p>
+  </div>
+
+  <div id="caja_herramientas" class="panel">
+    <h2>3.3. Herramientas para la elaboración de diagramas UML</h2>
+    <p>
+      Las herramientas CASE facilitan en gran manera el desarrollo de los diagramas UML. Podemos encontrar, entre otras, las siguientes herramientas:
+      <br>
+      <ul>
+        <li>Rational Systems Developer de IBM: Herramienta propietaria que permite el desarrollo de proyectos software basados en la metodología UML.</li>
+        <li>Visual Paradigm: Incluye diferentes módulos para realizar desarrollo UML, diseñar bases de datos, realizar actividades de ingeniería inversa y diseñar con Agile.</li>
+        <li>ArgoUML: Admite ingeniería directa e inversa.</li>
+      </ul>
+    </p>
+  </div>
+
+  <div id="caja_diagramasclases" class="panel">
+    <h2>3.4. Diagramas de clases</h2>
+    <p>Dentro de los diagramas estructurales, y de todos en general, es el más importante porque representa los elementos estáticos del sistema, sus atributos y comportamientos, y como se relacionan entre ellos.
+      <br>
+      En un diagrama de clases podemos encontrar los siguientes elementos:
+      <ul>
+        <li>Clases: recordemos que son abstracciones del dominio del sistema que representan elementos del mismo mediante una serie de características, que llamaremos atributos, y su comportamiento, que serán métodos. Los atributos y métodos tendrán una visibilidad que determinará quien puede acceder al atributo o método.</li>
+        <li>Relaciones: en el diagrama representan relaciones reales entre los elementos del sistema a los que hacen referencia las clases. Pueden ser de asociación, agregación y herencia.</li>
+        <li>Notas: Se representan como un cuadro donde podemos escribir comentarios que nos ayuden a entender algún concepto que queramos representar.</li>
+        <li>Elementos de agrupación: Se utilizan cuando hay que modelar un sistema grande, entonces las clases y sus relaciones se agrupan en paquetes, que a su vez se relacionan entre sí.</li>
+      </ul>
+    </p>
+    <h3>3.4.1. Creación de clases</h3>
+    <p>
+      Una clase se representa en el diagrama como un rectángulo divido en tres filas, arriba aparece el nombre de la clase, a continuación, los atributos con su visibilidad y después los métodos con su visibilidad que está representada por el signo menos "–" para los atributos (privados), por el signo más "+" para los métodos (públicos) y por el signo almohadilla “#” para los atributos o métodos protegidos. 
+    </p>
+    <h3>3.4.2. Atributos</h3>
+    <p>Forman la parte estática de la clase. Son un conjunto de variables para las que es preciso definir:
+      <ul>
+        <li>Su nombre.</li>
+        <li>-	Su tipo, puede ser un tipo simple, que coincidirá con el tipo de dato que se seleccione en el lenguaje de programación final a usar, o compuesto, pudiendo incluir otra clase.</li>
+      </ul>
+      Además se pueden indicar otros datos como un valor inicial o su visibilidad.
+      <br>
+      La visibilidad de un atributo se puede definir como:
+      <ul>
+        <li>Público: Se pueden acceder desde cualquier clase y cualquier parte del programa.</li>
+        <li>Privado: Sólo se pueden acceder desde operaciones de la clase.</li>
+        <li>Protegido: Sólo se pueden acceder desde operaciones de la clase o de clases derivadas en cualquier nivel.</li>
+        <li>Paquete: Se puede acceder desde las operaciones de las clases que pertenecen al mismo paquete que la clase que estamos definiendo. Se usa cuando el lenguaje de implementación es Java.</li>
+      </ul>
+    </p>
+    <h3>Métodos</h3>
+    <p>
+      Representan la funcionalidad de la clase, es decir, qué puede hacer. Para definir un método hay que indicar como mínimo su nombre, parámetros, el tipo que devuelve y su visibilidad. También se debe incluir una descripción del método que aparecerá en la documentación que se genere del proyecto.
+      <br>
+      Existen un caso particular de método, el constructor de la clase, que tiene como característica que no devuelve ningún valor. El constructor tiene el mismo nombre de la clase y se usa para ejecutar las acciones necesarias cuando se instancia un objeto de la clase.
+    </p>
+  </div>
+
+  <div id="caja_relacionesclases" class="panel">
+    <h2>3.5. Relaciones entre clases</h2>
+    <p>
+      Se representan como una línea continua. Los mensajes "navegan" por las relaciones entre clases, es decir, los mensajes se envían entre objetos de clases relacionadas. Las relaciones se caracterizan por su cardinalidad, que representa cuantos objetos de una clase se pueden involucrar en la relación, y pueden ser:
+      <ul>
+        <li>De herencia.</li>
+        <li>De composición.</li>
+        <li>De agregación.</li>
+      </ul>
+    </p>
+    <h3>3.5.1. Cardinalidad o multiplicidad de la relación</h3>
+    <p>
+      Un concepto muy importante es la cardinalidad de una relación, representa cuantos objetos de una clase se van a relacionar con objetos de otra clase. En una relación hay dos cardinalidades, una para cada extremo de la relación y pueden tener los siguientes valores:
+      <table>
+        <tr>
+          <th colspan="2">Significado de las cardinalidades</th>
+        </tr>
+        <tr>
+          <th>Cardinalidad</th>
+          <th>Significado</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Uno y sólo uno</td>
+        </tr>
+        <tr>
+          <td>0..1</td>
+          <td>Cero o uno</td>
+        </tr>
+        <tr>
+          <td>N..M</td>
+          <td>Desde N hasta M</td>
+        </tr>
+        <tr>
+          <td>*</td>
+          <td>Cero o varios</td>
+        </tr>
+        <tr>
+          <td>0..*</td>
+          <td>Cero o varios</td>
+        </tr>
+        <tr>
+          <td>1..*</td>
+          <td>Uno o varios (al menos uno)</td>
+        </tr>
+      </table>
+    </p>
+    <h3>3.5.2. Relación de herencia</h3>
+    <p>
+      La herencia es una propiedad que permite a los objetos ser construidos a partir de otros objetos, es decir, la capacidad de un objeto para utilizar estructuras de datos y métodos presentes en sus antepasados.
+      <br>
+      El objetivo principal de la herencia es la reutilización, poder utilizar código desarrollado con anterioridad. La herencia supone una clase base y una jerarquía de clases que contiene las clases derivadas. Las clases derivadas pueden heredar el código y los datos de su clase base, añadiendo su propio código especial y datos, incluso cambiar aquellos elementos de la clase base que necesitan ser diferentes, es por esto que los atributos, métodos y relaciones de una clase se muestran en el nivel más alto de la jerarquía en el que son aplicables.
+      <br>
+      Tipos:
+      <ul>
+        <li>Herencia simple: Una clase puede tener sólo un ascendente. Es decir una subclase puede heredar datos y métodos de una única clase base.</li>
+        <li>Herencia múltiple: Una clase puede tener más de un ascendente inmediato, adquirir datos y métodos de más de una clase.</li>
+      </ul>
+      Representación: En el diagrama de clases se representa como una asociación en la que el extremo de la clase base tiene un triángulo.
+    </p>
+    <h3>3.5.3. Agregación y composición</h3>
+    <p>
+      Muchas veces una determinada entidad existe como un conjunto de otras entidades. En este tipo de relaciones un objeto componente se integra en un objeto compuesto. La orientación a objetos recoge este tipo de relaciones como dos conceptos: la agregación y la composición.
+      <br>
+      Si las entidades que conforman otra entidad pueden existir con independencia de esta se trata de una agregación. En caso contrario se trata de una composición.
+      <br>
+      Estas relaciones se representan con un rombo en el extremo de la entidad contenedora. En el caso de la agregación es de color blanco y para la composición negro. Como en toda relación hay que indicar la cardinalidad.
+    </p>
+    <h3>3.5.4. Atributos de enlace</h3>
+    <p>
+      Es posible que tengamos alguna relación en la que sea necesario añadir algún tipo de información que la complete de alguna manera. Cuando esto ocurre podemos añadir atributos a la relación.
+    </p>
+  </div>
+
+  <div id="caja_requisitos" class="panel">
+    <h2>3.6. Paso de los requisitos de un sistema al diagrama de clases</h2>
+    <p>
+      Empezamos identificando objetos que serán las clases del diagrama examinando el planteamiento del problema. Buscamos sustantivos que puedan corresponder con las siguientes categorías:
+      <ul>
+        <li>Entidades externas (por ejemplo: otros sistemas, dispositivos, personas) que producen o consumen información a usar por un sistema computacional.</li>
+        <li>Cosas (por ejemplo: informes, presentaciones, cartas, señales) que son parte del dominio de información del problema.</li>
+        <li>Ocurrencias o sucesos (por ejemplo: una transferencia de propiedad o la terminación de una serie de movimientos en un robot) que ocurren dentro del contexto de una operación del sistema.</li>
+        <li>Papeles o roles (por ejemplo: director, ingeniero, vendedor) desempeñados por personas que interactúan con el sistema.</li>
+        <li>Unidades organizacionales (por ejemplo: división, grupo, equipo) que son relevantes en una aplicación.</li>
+        <li>Lugares (por ejemplo: planta de producción o muelle de carga) que establecen el contexto del problema y la función general del sistema.</li>
+        <li>Estructuras (por ejemplo: sensores, vehículos de cuatro ruedas o computadoras) que definen una clase de objetos o, en casos extremos, clases relacionadas de objetos.</li>
+      </ul>
+      Cuando tengamos la lista completa habrá que estudiar cada objeto potencial para ver si, finalmente, es incluido en el diagrama. Para ayudarnos a decidir podemos utilizar los siguientes criterios:
+      <ol type="1">
+        <li>La información del objeto es necesaria para que el sistema funcione. </li>
+        <li>El objeto posee un conjunto de atributos que podemos encontrar en cualquier ocurrencia del objeto. Si sólo aparece un atributo normalmente se rechazará y será añadido como atributo de otro objeto.</li>
+        <li>El objeto tiene un conjunto de operaciones identificables que pueden cambiar el valor de sus atributos y son comunes a cualquier ocurrencia del objeto.</li>
+        <li>Es una entidad externa que consume o produce información esencial para la producción de cualquier solución en el sistema.</li>
+      </ol>
+      El objeto se incluye si cumple todos (o casi todos) los criterios.
+    </p>
+    <h3>3.6.1. Obtención de atributps y operaciones</h3>
+    <p>
+      <ul>
+        <li>Atributos: A la hora de definir un objeto en nuestro sistema debemos preguntarnos qué elementos definen completamente al objeto en el contexto del problema actual.</li>
+        <li>Operaciones: Se obtienen analizando los verbos en el enunciado del problema.</li>
+        <li>Relaciones: Hay que ver cómo los objetos que finalmente hemos descrito se relacionan entre sí. Para facilitar el trabajo podemos buscar mensajes que se pasen entre objetos y las relaciones de composición y agregación. Las relaciones de herencia se suelen encontrar al comparar objetos semejantes entre sí, y constatar que tengan atributos y métodos comunes.</li>
+      </ul>
+    </p>
+  </div>
+
+  <div id="caja_generacioncodigo" class="panel">
+    <h2>3.7. Generación de código a partir del diagrama de clases</h2>
+    <p>
+      La Generación Automática de Código consiste en la creación utilizando herramientas CASE de código fuente de manera automatizada. El proceso pasa por establecer una correspondencia entre los elementos formales de los diagramas y las estructuras de un lenguaje de programación concreto. El diagrama de clases es un buen punto de partida porque permite una traducción bastante directa de las clases representadas gráficamente, a clases escritas en un lenguaje de programación específico.
+    </p>
+  </div>
+
+  <div id="caja_documentacion" class="panel">
+    <h2>3.8. Generación de documentación</h2>
+    <p>
+      Como en todos los diagramas UML, podemos hacer las anotaciones que consideremos necesarias abriendo la especificación de cualquiera de los elementos, clases o relaciones, o bien del diagrama en sí mismo.
+    </p>
+  </div>
+
+  <div id="caja_inginversa" class="panel">
+    <h2>4. Ingeniería inversa</h2>
+    <p>
+      La ingeniería inversa se define como el proceso de analizar código, documentación y comportamiento de una aplicación para identificar sus componentes actuales y sus dependencias y para extraer y crear una abstracción del sistema e información del diseño. El sistema en estudio no es alterado, sino que se produce un conocimiento adicional del mismo.
+      <br>
+      La ingeniería inversa puede ser de varios tipos:
+      <ul>
+        <li>Ingeniería inversa de datos: Se aplica sobre algún código de bases datos (aplicación, código SQL, etc.) para obtener los modelos relacionales o sobre el modelo relacional para obtener el diagrama entidad‐relación.</li>
+        <li>Ingeniería inversa de lógica o de proceso: Cuando la ingeniería inversa se aplica sobre el código de un programa para averiguar su lógica (reingeniería), o sobre cualquier documento de diseño para obtener documentos de análisis o de requisitos.</li>
+        <li>Ingeniería inversa de interfaces de usuario: Se aplica con objeto de mantener la lógica interna del programa para obtener los modelos y especificaciones que sirvieron de base para la construcción de la misma, con objeto de tomarlas como punto de partida en procesos de ingeniería directa que permitan modificar dicha interfaz.</li>
+      </ul>
+    </p>
+  </div>
+
+  <div id="caja_conclusion" class="panel">
+    <h2>Conclusión</h2>
+    <p>La creación de diagramas UML son de gran ayuda a la hora de crear el código de un programa, ya que nos permiten ver con claridad las características de los objetos
+      involucrados y las relaciones que mantienen.
+    </p>
+  </div>
+
+  <div id="caja_bibliografia" class="panel">
+    <h2>Bibliografía</h2>
+    <p>
+      <a href="https://www.iesvirgendelcarmen.com/moodle/pluginfile.php/109947/mod_resource/content/1/ED5.pdf">Teoría tema 5 Entornos de Desarrollo IES Virgen del Carmen</a>
+      <br>
+      <a href="https://view.genial.ly/6083de37591b1c0d2c6c5e03/interactive-content-genially-sin-titulo">Genially, para la realización del mapa conceptual de los tipos de diagramas UML</a>
+    </p>
+  
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+  <script src="js/controlador.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
