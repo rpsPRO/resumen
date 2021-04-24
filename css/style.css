@@ -1,5 +1,9 @@
 body {
-    background-color: lightblue;
+    background-image: url(../img/fondopantalla.jpg);
+}
+
+.navbar.navbar-expand-lg.navbar-dark.bg-secondary{
+background-image: url(../img/fondonav.jpg);
 }
 
 h1,h2,h3 {
@@ -8,12 +12,12 @@ h1,h2,h3 {
 
 p {
     font-family: verdana;
-    font-size: 15px;
+    font-size: 16px;
 }
 
 li {
     font-family: sans-serif;
-    font-size: 13px;
+    font-size: 16px;
 }
 
 
@@ -25,14 +29,22 @@ li {
 }
 
 table{
-    background-color: red;
+    background-color: black;
+    border: 10;
+}
+
+#titulotabla{
+    background-color: teal;
+    text-align: center;
 }
 
 th{
-    background-color: yellow;
+    background-color: turquoise;
+    text-align: center;
 }
 tr{
-    background-color: grey;
+    background-color: rgb(245, 245, 119);
+    text-align: center;
 }
 
 
